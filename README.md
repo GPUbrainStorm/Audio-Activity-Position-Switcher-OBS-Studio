@@ -7,9 +7,11 @@ How to run:
 
 2- Clone the repositry or download and unzip anywhere on your PC.
 
+3- Start OBS Studio OBS socket on port 4455.
+
 3- Run using Launch.bat file.
 
-4- In the command line, enter the scene name first and then the source name.
+4- In the command line, enter the scene name and then the main source name.
 
 5- Test by changing the audio activity on each source.
 
