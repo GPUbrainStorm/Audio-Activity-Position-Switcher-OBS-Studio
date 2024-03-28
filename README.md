@@ -1,13 +1,15 @@
 # Audio-Activity-Position-Switcher-OBS-Studio
  This is a simple NodeJS code that uses OBS Websocket to switch sources positions based on audio activity.
 
+ This script can be used multiple times on multiple scenes at the same time.
+
 How to run:
 
 1- install NodeJS LTS (This was tested using NodeJS v20.11.1 on Windows10 x64).  https://nodejs.org/en/download
 
 2- Clone the repositry or download and unzip anywhere on your PC.
 
-3- Start OBS Studio OBS socket on port 4455 with no authintication (You can use auth but you should add the password to main.js in line 111 instead of undefined as follows: 'YOUR_PASS').
+3- Start OBS Studio OBS socket on port 4455 with no authintication (You can use auth but you should add the password to main.js in line 111 replacing undefined with 'YOUR_PASSWORD'). Note: Tested on Websocket v5.x.x and probably won't work with older versions.
 
 4- Run using Launch.bat file.
 
