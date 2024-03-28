@@ -119,6 +119,14 @@ async function connectAndSubscribe() {
         console.error('Failed to connect or subscribe:', error);
     }
 }
+
+// Get cureent scene
+async function getCurr(){
+  const CurrScene = await obs.call('GetCurrentProgramScene');
+  const currName = CurrScene.currentProgramSceneName;
+  return currName;
+}
+
 // Call all functions Asynchronously
 async function excAll() {
   await handleUserInputScene();
@@ -129,6 +137,8 @@ async function excAll() {
 
 // Handle the event with volume levels.
 obs.on('InputVolumeMeters', async data => {
+  var currSceneName = await getCurr();
+  if(currSceneName === MainScene) {
     Volumes = [];
     Inputs = [];
     data.inputs.forEach(input => {
@@ -140,6 +150,7 @@ obs.on('InputVolumeMeters', async data => {
     var max = Math.max(...Volumes);
     const indexOfMaxVolume = Volumes.indexOf(max);
     var inputName = Inputs[indexOfMaxVolume];
+    
     if(max>0.3){
         if(Isprocess){
             MainSec = await setTransform(MainScene,inputName,MainSec);
@@ -147,6 +158,7 @@ obs.on('InputVolumeMeters', async data => {
             setTimeout(()=> Isprocess = true, 2000);
         }
     }
+  }
 });
 
 // start
