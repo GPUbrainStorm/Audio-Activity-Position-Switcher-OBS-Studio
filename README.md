@@ -7,7 +7,7 @@ How to run:
 
 2- Clone the repositry or download and unzip anywhere on your PC.
 
-3- Start OBS Studio OBS socket on port 4455 with no authintication (You can use auth but you should add the password to main.js).
+3- Start OBS Studio OBS socket on port 4455 with no authintication (You can use auth but you should add the password to main.js in line 111 instead of undefined as follows: 'YOUR_PASS').
 
 4- Run using Launch.bat file.
 
