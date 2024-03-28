@@ -20,4 +20,7 @@ How to run:
 
 Note: this is so simple use case where you have a big frame for the active speaker and all other sources are in smaller frames, when the audio activity changes it will automatically switch the new active source to be in the big fram and the old active source to the smaller fram.
 
+Testing video on youtube:
+https://youtu.be/7Tv4p-olqqA?si=je1NS_42oGdlS1rK
+
 If you have any problems running it you can start an issue and I will try to assist asap.
