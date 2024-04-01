@@ -9,7 +9,7 @@ How to run:
 
 2- Clone the repositry or download and unzip anywhere on your PC.
 
-3- Start OBS Studio OBS socket on port 4455 with no authintication (You can use auth but you should add the password to main.js in line 111 replacing undefined with 'YOUR_PASSWORD'). Note: Tested on Websocket v5.x.x and probably won't work with older versions.
+3- Start OBS Studio Websocket on port 4455 with no authintication (You can use auth but you should add the password to main.js in line 111 replacing undefined with 'YOUR_PASSWORD'). Note: Tested on Websocket v5.x.x and probably won't work with older versions.
 
 4- Run using Launch.bat file.
 
